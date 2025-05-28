@@ -3,11 +3,6 @@
 #include <iostream>
 #include <vector>
 #include "game.h"
-// #include "game-settings.h"
-//max "_" 166
-//max "_" 166
-//max "1" 166
-//max "2" 166
 class BattleScreen {
 private:
     int WIDTH = 110;
@@ -16,7 +11,7 @@ private:
 public:
     BattleScreen() {
         screen = std::vector<std::string>(HEIGHT, std::string(WIDTH, ' '));
-    }
+    } // constructor
 
     void clearScreen() {
         for (auto& line : screen) {
@@ -83,7 +78,7 @@ public:
         }
     }
 
-    // ฟังก์ชันอัปเดตข้อมูลเลย
+    // ฟังก์ชันอัปเดตข้อมูล
     void updateBattleScreen(std::string Player1,std::vector<std::string> Player1Art, std::string Player1Monster, int Player1HP,
                              std::string Player2,std::vector<std::string> Player2Art, std::string Player2Monster, int Player2HP) {
         clearScreen();
@@ -98,13 +93,3 @@ public:
 
 
 };
-
-// int main(){
-//     BattleScreen screen;
-
-//     screen.updateBattleScreen(
-//         "Bot", "Aquaril", 75, 100,  // ฝั่งศัตรู
-//         "Player", "Flamo", 50, 100  // ฝั่งเรา
-//     );
-    
-// }

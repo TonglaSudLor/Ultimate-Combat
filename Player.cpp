@@ -115,6 +115,5 @@ void Player::switchMonster() {
         break; 
     }
     currentMonster= choose - 1;
-    // std::cout << "Switched to " << team[currentMonster].getName() << "!\n";
 }
 

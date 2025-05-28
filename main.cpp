@@ -10,9 +10,7 @@
 
     while (true) {
         myGame.turnswitch();
-        myGame.checkWin();
     }
 
     return 0;
  }
-

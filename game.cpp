@@ -48,6 +48,14 @@ void Game::start() {
         int choosen;
         std::cout << "Enter the number of the monster you want to have in your team: ";
         std::cin>>choosen;
+
+        if (std::cin.fail()) {
+        // std::cout << "That's not an integer!" << std::endl;
+        // เคลียร์สถานะ error ของ cin
+        std::cin.clear();
+        // ลบค่าที่อยู่ใน buffer
+        std::cin.ignore(10000, '\n');
+        } else {
         choosen--;
         if (choosen>=0&& choosen < leftMonster.size()){
             if(leftMonster[choosen].name != "_Choosen_"){
@@ -61,6 +69,7 @@ void Game::start() {
             else if (leftMonster[choosen].name == "_Choosen_"){
                 std::cout<< "This monster is choosen.";
             }
+        }
         }
     clearConsole();
     }
@@ -86,6 +95,13 @@ void Game::start() {
         int choosen;
         std::cout << "Enter the number of the monster you want to have in your team: ";
         std::cin>>choosen;
+        if (std::cin.fail()) {
+        // std::cout << "That's not an integer!" << std::endl;
+        // เคลียร์สถานะ error ของ cin
+        std::cin.clear();
+        // ลบค่าที่อยู่ใน buffer
+        std::cin.ignore(10000, '\n');
+        } else {
         choosen--;
         if (choosen>=0&& choosen < leftMonster.size()){
             if(leftMonster[choosen].name != "_Choosen_"){
@@ -100,6 +116,7 @@ void Game::start() {
                 std::cout<< "This monster is choosen.";
             }
         }
+    }
     clearConsole();
     }
     //------------------end of choose monster of Player 2--------

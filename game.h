@@ -114,7 +114,7 @@ private:
 class Game {
 
 public:
-    Game();
+    Game(); // constructor
     void start();
     void turnswitch();
     void checkWin();
