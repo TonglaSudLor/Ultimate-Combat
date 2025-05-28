@@ -64,8 +64,6 @@ g++ main.cpp game.cpp Player.cpp Monster.cpp Move.cpp Display.cpp -o monster_gam
 ```
 3. เริ่มเล่น:
 ```
-./monster_game
-```
 4. เลือกคำสั่ง แล้วต่อสู้จนชนะมอนสเตอร์ทั้งหมด!
 
 ---
